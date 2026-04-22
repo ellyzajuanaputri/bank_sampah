@@ -1,13 +1,17 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Sampah Green Cikeas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>🌱 Bank Sampah Green Cikeas</h1>
+    <div class="header-flex">
+        <h1>🌱 Bank Sampah Green Cikeas</h1>
+        <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+    </div>
     <p>Mengelola Sampah, Menjaga Lingkungan</p>
 </header>
 
@@ -15,26 +19,29 @@
     <a href="index.html">Beranda</a>
     <a href="edukasi.html">Edukasi</a>
     <a href="kegiatan.html">Kegiatan</a>
+    <a href="kontak.html">Kontak</a>
 </nav>
 
 <section class="card">
     <h2>Selamat Datang</h2>
-    <p>Website ini bertujuan memberikan informasi tentang pengelolaan sampah berbasis masyarakat.</p>
+    <p>Website ini memberikan informasi pengelolaan sampah berbasis masyarakat.</p>
 </section>
 
 <section>
     <h2>Artikel Terbaru</h2>
     <div class="grid">
-        <div class="card">
+        <div class="card hover">
+            <img src="https://via.placeholder.com/300" alt="sampah">
             <h3>Cara Memilah Sampah</h3>
-            <p>Pisahkan sampah organik dan anorganik dari rumah.</p>
-            <a href="artikel1.html">Baca</a>
+            <p>Pisahkan sampah dari rumah.</p>
+            <a href="artikel1.html" class="btn">Baca</a>
         </div>
 
-        <div class="card">
+        <div class="card hover">
+            <img src="https://via.placeholder.com/300" alt="bank sampah">
             <h3>Manfaat Bank Sampah</h3>
-            <p>Lingkungan bersih dan tambah penghasilan.</p>
-            <a href="artikel2.html">Baca</a>
+            <p>Lingkungan bersih & bernilai ekonomi.</p>
+            <a href="artikel2.html" class="btn">Baca</a>
         </div>
     </div>
 </section>
@@ -42,6 +49,12 @@
 <footer>
     <p>© 2026 Bank Sampah Green Cikeas</p>
 </footer>
+
+<script>
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
