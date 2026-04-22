@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Kontak</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<h1>Kontak Kami</h1>
+<form onsubmit="return kirimPesan()">
+<input type="text" placeholder="Nama" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<textarea placeholder="Pesan" required></textarea><br><br>
+<button class="btn">Kirim</button>
+</form>
+<p id="notif"></p>
+
+<script>
+function kirimPesan(){
+    document.getElementById("notif").innerText = "Pesan berhasil dikirim!";
+    return false;
+}
+</script>
+
+<a href="index.html" class="btn">Kembali</a>
+</body>
+</html>
