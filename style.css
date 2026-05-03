@@ -80,8 +80,15 @@ text-align:center;
 }
 
 .timeline{
-display:flex;
-gap:10px;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.timeline div{
+    background:#dbe8db;
+    padding:12px;
+    border-radius:8px;
 }
 
 footer{
