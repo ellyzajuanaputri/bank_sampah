@@ -4,23 +4,34 @@
 <title>Kontak</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-<h1>Kontak Kami</h1>
-<form onsubmit="return kirimPesan()">
-<input type="text" placeholder="Nama" required><br><br>
-<input type="email" placeholder="Email" required><br><br>
-<textarea placeholder="Pesan" required></textarea><br><br>
+<body>
+
+<nav class="navbar">
+<a href="index.html">Beranda</a>
+<a href="edukasi.html">Edukasi</a>
+<a href="kegiatan.html">Kegiatan</a>
+<a href="kontak.html">Kontak</a>
+</nav>
+
+<section class="card">
+<h1>Kontak</h1>
+<p>Email: greensampah@mail.com</p>
+
+<form onsubmit="return kirim()">
+<input type="text" placeholder="Nama" required><br>
+<input type="email" placeholder="Email" required><br>
+<textarea placeholder="Pesan" required></textarea><br>
 <button class="btn">Kirim</button>
 </form>
-<p id="notif"></p>
+<p id="msg"></p>
+</section>
 
 <script>
-function kirimPesan(){
-    document.getElementById("notif").innerText = "Pesan berhasil dikirim!";
-    return false;
+function kirim(){
+document.getElementById('msg').innerText='Pesan terkirim!';
+return false;
 }
 </script>
 
-<a href="index.html" class="btn">Kembali</a>
 </body>
 </html>
