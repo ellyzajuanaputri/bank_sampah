@@ -18,19 +18,42 @@ margin:0 10px;
 text-decoration:none;
 }
 
-.hero{
-background:url('https://via.placeholder.com/1200x400');
-color:white;
-padding:80px;
-text-align:center;
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(30,41,59,0.85), rgba(30,41,59,0.85)),
+    url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
 }
 
-.btn{
-background:#0ea5e9;
-color:white;
-padding:10px 20px;
-border-radius:5px;
-text-decoration:none;
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #0ea5e9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .card{
