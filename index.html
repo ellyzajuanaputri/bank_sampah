@@ -1,60 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Sampah Green Cikeas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Sampah Green Cikeas</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <div class="header-flex">
-        <h1>🌱 Bank Sampah Green Cikeas</h1>
-        <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+<nav class="navbar">
+    <h2>Green Cikeas</h2>
+    <div>
+        <a href="index.html">Beranda</a>
+        <a href="edukasi.html">Edukasi</a>
+        <a href="kegiatan.html">Kegiatan</a>
+        <a href="kontak.html">Kontak</a>
     </div>
-    <p>Mengelola Sampah, Menjaga Lingkungan</p>
-</header>
-
-<nav>
-    <a href="index.html">Beranda</a>
-    <a href="edukasi.html">Edukasi</a>
-    <a href="kegiatan.html">Kegiatan</a>
-    <a href="kontak.html">Kontak</a>
 </nav>
 
-<section class="card">
-    <h2>Selamat Datang</h2>
-    <p>Website ini memberikan informasi pengelolaan sampah berbasis masyarakat.</p>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Bank Sampah Green Cikeas</h1>
+        <p>Mengelola Sampah, Menjaga Lingkungan & Meningkatkan Ekonomi Masyarakat</p>
+        <a href="edukasi.html" class="btn">Mulai Belajar</a>
+    </div>
 </section>
 
-<section>
-    <h2>Artikel Terbaru</h2>
-    <div class="grid">
-        <div class="card hover">
-            <img src="https://via.placeholder.com/300" alt="sampah">
-            <h3>Cara Memilah Sampah</h3>
-            <p>Pisahkan sampah dari rumah.</p>
-            <a href="artikel1.html" class="btn">Baca</a>
-        </div>
+<section class="card center">
+    <h2>Statistik Nasabah</h2>
+    <h1 id="counter">0</h1>
+</section>
 
-        <div class="card hover">
-            <img src="https://via.placeholder.com/300" alt="bank sampah">
-            <h3>Manfaat Bank Sampah</h3>
-            <p>Lingkungan bersih & bernilai ekonomi.</p>
-            <a href="artikel2.html" class="btn">Baca</a>
-        </div>
+<section class="card">
+    <h2>Manfaat</h2>
+    <div class="grid">
+        <div class="box">Lingkungan lebih bersih</div>
+        <div class="box">Tambah penghasilan</div>
+        <div class="box">Edukasi masyarakat</div>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Alur Bank Sampah</h2>
+    <div class="timeline">
+        <div>1. Nasabah membawa sampah dari rumah</div>
+        <div>2. Sampah ditimbang oleh panitia</div>
+        <div>3. Dicatat jenis dan berat sampah</div>
+        <div>4. Perhitungan pendapatan nasabah</div>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Bank Sampah Green Cikeas</p>
+<p>© 2026 Green Cikeas</p>
 </footer>
 
 <script>
-function toggleDarkMode(){
-    document.body.classList.toggle("dark");
-}
+let count=0,target=120;
+let el=document.getElementById('counter');
+let i=setInterval(()=>{
+ if(count>=target) clearInterval(i);
+ else el.innerText=++count;
+},20);
 </script>
 
 </body>
